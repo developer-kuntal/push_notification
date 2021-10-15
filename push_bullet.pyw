@@ -14,8 +14,6 @@ API_KEY = os.environ.get("API_KEY")
 
 load_dotenv()
 
-# API_KEY = "o.N4KmL9XRnbLeVVDmu8IEOSLtvwlxo3e5"
-
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = client["login_status"]
 mycol = mydb["status"]
